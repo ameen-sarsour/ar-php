@@ -58,9 +58,8 @@ return [
 You can then call the function :
 
 ```php
-        $Arabic = \Yii::$app->strToTime;
         $str  = '1 رمضان 1439';
-        $int  = $Arabic->strtotime($str, $time);
+        $int  = \Yii::$app->strToTime->strtotime($str, $time);
         $date = date('l dS F Y', $int);
         echo "String: $str \n";
         echo "TimeStamp: $int \n";
@@ -71,7 +70,7 @@ You can then call the function :
 
 
 # ArPHP Full Features
-|  en| ar  | library name | Example Github link | Example Result |
+|  en| العربية  | library name | Example Github link | Example Result |
 | ------- | ------- | ------- | ----- | ----- |
 |  Arabic text auto summarization | التلخيص الآلي للنص العربي |AutoSummarize | [Example](https://github.com/ameen-sarsour/ar-php/blob/master/src/I18N/Arabic/Examples/AutoSummarize.php) | [Result](http://www.ar-php.org/I18N/Arabic/Examples/AutoSummarize.php)
 | Advanced Arabic search (stem based) |  بحث متقدم بالعربية (بدلالة ساق الكلمة) | Query | [Example](https://github.com/ameen-sarsour/ar-php/blob/master/src/I18N/Arabic/Examples/Query.php) | [Result](http://www.ar-php.org/I18N/Arabic/Examples/Query.php) |
