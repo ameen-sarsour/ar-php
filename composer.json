@@ -17,7 +17,8 @@
     }
   ],
   "require": {
-    "php": ">=5.4.0"
+    "php": ">=5.4.0",
+    "ext-SimpleXML": "*"
   },
   "autoload": {
     "psr-4": {
